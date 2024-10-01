@@ -1,0 +1,22 @@
+body{
+    background-color:#ccc;
+    background-image:url("img/pattern4.png")
+    /*background-repeat: no-repeat;
+    background-repeat: no-repeat-y;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: left bottom;*/
+}
+
+#box{
+    border: 5px solid black;
+    padding: 10px;
+    background-color:rgb(61, 126, 187);
+    color:white;
+}
+
+h2{
+    color: rgb(240, 240, 240);
+    background: #63A5D1;
+    border:5px solid #0B4784;
+}

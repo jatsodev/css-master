@@ -8,6 +8,15 @@ h1{
     font-style:italic;
     text-transform: uppercase;
     font-size: 45px;
+    /*Colors*/
+    /*System Color*/
+    color: IndianRed;
+    /*HEX Color*/
+    color: #008000;
+    /*RGB Color */
+    color: rgb(210, 105, 30);
+    /*RGBA Color*/
+    color: rgba(255, 217, 0, 0.614);
 }
 
 h2{
