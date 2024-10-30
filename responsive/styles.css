@@ -59,8 +59,37 @@ aside{
 /* From 0px width to 888px screen width */
 @media (max-width: 888px){
     /* The styles will be executed */
-    #articles article {
+    #articles article{
         width: 40%;
         background: red;
+    }
+}
+
+@media (max-width: 632px){
+    /* The styles will be executed */
+    #container{
+        overflow: hidden;
+    }
+    aside{
+        float: none;
+        min-height: auto;
+        line-height: 20px;
+        width: 91%;
+        padding: 19px;
+    }
+
+    #articles{
+        width: 100%;
+    }
+    #articles article{
+        width: 90%;
+        background: blue;
+    }
+}
+
+@media (max-width: 554px){
+    /* The styles will be executed */
+    body{
+        background: lightsalmon;
     }
 }
