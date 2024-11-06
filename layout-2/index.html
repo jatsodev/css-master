@@ -1,67 +1,257 @@
 <!DOCTYPE html>
 <html lang="us">
-    <head>
-        <meta charset="utf-8"/>
-        <title>Layout 2</title>
-        <link rel="icon" type="favicon/x-icon" href="img/supertux.png"/>
-        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-    </head>
-    <body>
-        <!-- Header start -->
-        <header id="header">
-            <div class="wrap">
-                <div id="logo">
-                    <span class="gear">S</span>
-                    <h3>BLOG</h3>
-                </div>
-                <nav id="menu">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">TRAINING</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-        </header>
-        <!-- Header end -->
-        <!-- Banner start -->
-            <section class="wrap wrap-content">
-                <section id="info">
-                    <div id="banner">
-                        <h1>Web development course with Jatso</h1>
-                    </div>
-                    <div id="cards">
-                        <div class="card">
-                            <p class="icon">H</p>
-                            <h2 class="category">Web Development</h2>
-                            <p class="description">Learn the main languages ​​for developing websites. Become a web master!!!</p>
-                        </div>
-                        <div class="card">
-                            <p class="icon">_</p>
-                            <h2 class="category">Operating systems</h2>
-                            <p class="description">Learn to manage Linux and Windows systems.</p>
-                        </div>
-                        <div class="card">
-                            <p class="icon">S</p>
-                            <h2 class="category">Hardware</h2>
-                            <p class="description">Get to know the ins and outs of hardware.</p>
-                        </div>
-                        <div class="card">
-                            <p class="icon">u</p>
-                            <h2 class="category">Networks and Internet</h2>
-                            <p class="description">Learn to configure and manage computer networks and servers.</p>
-                        </div>
-                        <div class="card">
-                            <p class="icon">a</p>
-                            <h2 class="category">Databases</h2>
-                            <p class="description">Learn to set up and manage databases.</p>
-                        </div>
+	<head>
+		<meta charset="utf-8" />
+		<title>Layout 2</title>
+		<link rel="icon" type="favicon/x-icon" href="img/supertux.png" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	</head>
+	<body>
+		<!-- Header start -->
+		<header id="header">
+			<div class="wrap">
+				<div id="logo">
+					<span class="gear">S</span>
+					<h3>BLOG</h3>
+				</div>
+				<nav id="menu">
+					<ul>
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">BLOG</a></li>
+						<li><a href="#">TRAINING</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- Header end -->
 
-                    </div>
-                </section>
-            </section>
-        <!-- Banner end -->
-    </body>
+		<section class="wrap wrap-content">
+			<section id="info">
+				<!-- Banner start -->
+				<div id="banner">
+					<h1>Web development course with Jatso</h1>
+				</div>
+				<!-- Banner end -->
+				<!-- Cards start -->
+				<div id="cards">
+					<div class="card">
+						<p class="icon">H</p>
+						<h2 class="category">Web Development</h2>
+						<p class="description">
+							Learn the main languages ​​for developing websites. Become a web
+							master!!!
+						</p>
+					</div>
+					<div class="card">
+						<p class="icon">_</p>
+						<h2 class="category">Operating systems</h2>
+						<p class="description">
+							Learn to manage Linux and Windows systems.
+						</p>
+					</div>
+					<div class="card">
+						<p class="icon">S</p>
+						<h2 class="category">Hardware</h2>
+						<p class="description">Get to know the ins and outs of hardware.</p>
+					</div>
+					<div class="card">
+						<p class="icon">u</p>
+						<h2 class="category">Networks and Internet</h2>
+						<p class="description">
+							Learn to configure and manage computer networks and servers.
+						</p>
+					</div>
+					<div class="card">
+						<p class="icon">a</p>
+						<h2 class="category">Databases</h2>
+						<p class="description">Learn to set up and manage databases.</p>
+					</div>
+				</div>
+				<!-- Cards end -->
+			</section>
+			<!-- Aside start -->
+			<aside id="aside">
+				<h3>SEARCH</h3>
+				<div id="search">
+					<form>
+						<input type="text" />
+						<input type="button" value="L" class="icon" />
+					</form>
+				</div>
+				<h3>LOGIN</h3>
+				<div id="login" class="aside-box">
+					<form>
+						<label id="user" class="icon">U</label>
+						<input type="email" />
+
+						<label id="password" class="icon">w</label>
+						<input type="password" />
+
+						<input type="submit" value="Enter" />
+						<input type="reset" value="Clean" />
+
+						<a href="#">Register here</a>
+						<a href="#">Have you forgotten your password?</a>
+					</form>
+				</div>
+				<h3>Social Networks</h3>
+				<div id="social" class="aside-box">
+					<div class="x">
+						<a href="#" class="icon">'</a>
+					</div>
+					<div class="facebook">
+						<a href="#" class="icon">f</a>
+					</div>
+					<div class="youtube">
+						<a href="#" class="icon">y</a>
+					</div>
+				</div>
+				<h3>Sponsors</h3>
+				<div id="sponsors" class="aside-box"></div>
+			</aside>
+			<!-- Aside end -->
+			<!-- Start of articles -->
+			<section id="articles">
+                <h2>Last articles</h2>
+                <div class="clearfix"></div>
+				<article>
+					<div class="data">
+						<span>Date: 12 dec</span>
+						<span>Category: Tests</span>
+					</div>
+					<h4>
+						<a href="#">Title of the article</a>
+					</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+						fringilla mauris orci, et consequat sem ullamcorper id. Aliquam odio
+						mauris, dignissim a accumsan sit amet, rutrum et mi. Praesent
+						tincidunt sit amet elit in fermentum. Duis a laoreet est, at mattis
+						odio. In tristique, libero ac porttitor interdum, elit dolor porta
+						nunc, aliquet consectetur ligula massa sit amet tellus. Quisque
+						suscipit, purus nec auctor vulputate, lacus erat consectetur nunc,
+						dignissim lacinia nibh tellus in magna. Interdum et malesuada fames
+						ac ante ipsum primis in faucibus. Aliquam luctus ex id dolor ornare
+						hendrerit. Mauris nec justo at tellus congue sagittis. Etiam est
+						metus, porta in sollicitudin eu, varius in arcu.
+					</p>
+				</article>
+				<article>
+					<div class="data">
+						<span>Date: 12 dec</span>
+						<span>Category: Tests</span>
+					</div>
+					<h4>
+						<a href="#">Title of the article</a>
+					</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+						fringilla mauris orci, et consequat sem ullamcorper id. Aliquam odio
+						mauris, dignissim a accumsan sit amet, rutrum et mi. Praesent
+						tincidunt sit amet elit in fermentum. Duis a laoreet est, at mattis
+						odio. In tristique, libero ac porttitor interdum, elit dolor porta
+						nunc, aliquet consectetur ligula massa sit amet tellus. Quisque
+						suscipit, purus nec auctor vulputate, lacus erat consectetur nunc,
+						dignissim lacinia nibh tellus in magna. Interdum et malesuada fames
+						ac ante ipsum primis in faucibus. Aliquam luctus ex id dolor ornare
+						hendrerit. Mauris nec justo at tellus congue sagittis. Etiam est
+						metus, porta in sollicitudin eu, varius in arcu.
+					</p>
+				</article>
+				<article>
+					<div class="data">
+						<span>Date: 12 dec</span>
+						<span>Category: Tests</span>
+					</div>
+					<h4>
+						<a href="#">Title of the article</a>
+					</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+						fringilla mauris orci, et consequat sem ullamcorper id. Aliquam odio
+						mauris, dignissim a accumsan sit amet, rutrum et mi. Praesent
+						tincidunt sit amet elit in fermentum. Duis a laoreet est, at mattis
+						odio. In tristique, libero ac porttitor interdum, elit dolor porta
+						nunc, aliquet consectetur ligula massa sit amet tellus. Quisque
+						suscipit, purus nec auctor vulputate, lacus erat consectetur nunc,
+						dignissim lacinia nibh tellus in magna. Interdum et malesuada fames
+						ac ante ipsum primis in faucibus. Aliquam luctus ex id dolor ornare
+						hendrerit. Mauris nec justo at tellus congue sagittis. Etiam est
+						metus, porta in sollicitudin eu, varius in arcu.
+					</p>
+				</article>
+				<article>
+					<div class="data">
+						<span>Date: 12 dec</span>
+						<span>Category: Tests</span>
+					</div>
+					<h4>
+						<a href="#">Title of the article</a>
+					</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+						fringilla mauris orci, et consequat sem ullamcorper id. Aliquam odio
+						mauris, dignissim a accumsan sit amet, rutrum et mi. Praesent
+						tincidunt sit amet elit in fermentum. Duis a laoreet est, at mattis
+						odio. In tristique, libero ac porttitor interdum, elit dolor porta
+						nunc, aliquet consectetur ligula massa sit amet tellus. Quisque
+						suscipit, purus nec auctor vulputate, lacus erat consectetur nunc,
+						dignissim lacinia nibh tellus in magna. Interdum et malesuada fames
+						ac ante ipsum primis in faucibus. Aliquam luctus ex id dolor ornare
+						hendrerit. Mauris nec justo at tellus congue sagittis. Etiam est
+						metus, porta in sollicitudin eu, varius in arcu.
+					</p>
+				</article>
+				<article>
+					<div class="data">
+						<span>Date: 12 dec</span>
+						<span>Category: Tests</span>
+					</div>
+					<h4>
+						<a href="#">Title of the article</a>
+					</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+						fringilla mauris orci, et consequat sem ullamcorper id. Aliquam odio
+						mauris, dignissim a accumsan sit amet, rutrum et mi. Praesent
+						tincidunt sit amet elit in fermentum. Duis a laoreet est, at mattis
+						odio. In tristique, libero ac porttitor interdum, elit dolor porta
+						nunc, aliquet consectetur ligula massa sit amet tellus. Quisque
+						suscipit, purus nec auctor vulputate, lacus erat consectetur nunc,
+						dignissim lacinia nibh tellus in magna. Interdum et malesuada fames
+						ac ante ipsum primis in faucibus. Aliquam luctus ex id dolor ornare
+						hendrerit. Mauris nec justo at tellus congue sagittis. Etiam est
+						metus, porta in sollicitudin eu, varius in arcu.
+					</p>
+				</article>
+				<article>
+					<div class="data">
+						<span>Date: 12 dec</span>
+						<span>Category: Tests</span>
+					</div>
+					<h4>
+						<a href="#">Title of the article</a>
+					</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+						fringilla mauris orci, et consequat sem ullamcorper id. Aliquam odio
+						mauris, dignissim a accumsan sit amet, rutrum et mi. Praesent
+						tincidunt sit amet elit in fermentum. Duis a laoreet est, at mattis
+						odio. In tristique, libero ac porttitor interdum, elit dolor porta
+						nunc, aliquet consectetur ligula massa sit amet tellus. Quisque
+						suscipit, purus nec auctor vulputate, lacus erat consectetur nunc,
+						dignissim lacinia nibh tellus in magna. Interdum et malesuada fames
+						ac ante ipsum primis in faucibus. Aliquam luctus ex id dolor ornare
+						hendrerit. Mauris nec justo at tellus congue sagittis. Etiam est
+						metus, porta in sollicitudin eu, varius in arcu.
+					</p>
+				</article>
+                <article id="blog">
+                    <a href="#">Go to the blog</a>
+                </article>
+			</section>
+			<!-- End of articles -->
+		</section>
+	</body>
 </html>
