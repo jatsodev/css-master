@@ -72,12 +72,47 @@ body{
     transition: all 300ms;
 }
 
+#logo:hover{
+    border-radius:2px;
+    color: black;
+    background-color: #ccc;
+}
+
 #logo .gear{
     display: block;
     float: left;
     font-size: 30px;
     margin-top: 8px;
     margin-left: 26px;
+    animation-name: rotate-gear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-gear{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+#logo:hover .gear{
+    animation: fromBellow 500ms linear;
+}
+
+@keyframes fromBellow{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
 }
 
 #logo h3{ 
@@ -87,7 +122,19 @@ body{
     margin-top: 5px;
     margin-right: 65px;
     transition: all 300ms
+}
 
+#logo:hover h3{
+    animation: fromRight 300ms linear;
+}
+
+@keyframes fromRight{
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(0%);
+    }
 }
 
 #menu{
@@ -125,6 +172,17 @@ body{
     background: url("../img/bakbaner.png");
     background-position: -200px -200px;
     margin: 20px auto;
+    overflow: hidden;
+    animation: backBanner 10s linear;
+}
+
+@keyframes backBanner{
+    0%{
+        background-position: 0px 0px;
+    }
+    100%{
+        background-position: -200px -200px;
+    }
 }
 
 #banner h1{
@@ -138,6 +196,31 @@ body{
     text-shadow: 2px 2px 1px black;
     margin: 23px auto;
     text-align: center;
+    animation: showText 10s linear;
+}
+@keyframes showText{
+    0%{
+        transform: translateX(-600%) scale(5,5);
+        opacity: 1;
+
+    }
+    50%{
+        transform: translateX(600%) scale(5,5);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(-600%) scale(5,5);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%) scale(1,1);
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        opacity: 1;
+
+    }
 }
 
 /* Cards */
@@ -441,4 +524,78 @@ aside h3{
     font-size: 40px;
     letter-spacing: 3px;
     color: #00538c;
+}
+
+/* Footer */
+#footer{
+    width: 100%;
+    height: 470px;
+    background: black;
+    color: white;
+    overflow: hidden;
+}
+
+#footer .wrap > div{
+    float: left;
+    width: 320px; 
+    /* width: 30%;  */
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-family: "TrebuchetMS";
+}
+
+#footer a{
+    text-decoration: none;
+    color: #37bcf9;
+    transition: all 300ms;
+}
+
+#footer h5{
+    display: block;
+    background: url("../img/pxgray.png"), white;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#footer ul{
+    text-align: left;
+    margin: 20px;
+    font-size: 25px;
+}
+
+#footer ul li{
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#footer ul li a{
+    display: block;
+    height: 40px;
+}
+
+#footer iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#footer img{
+    margin-bottom: 15px;
+}
+
+#footer #browsers img{
+    width: 45px;
 }
