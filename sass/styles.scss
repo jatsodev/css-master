@@ -1,0 +1,18 @@
+$font: sans-serif, Helvetica, Arial;
+$background-color: #ccc;
+$font-color: red;
+$second-font-color: rgb(115, 22, 22);
+
+body{
+    background-color: $background-color;
+
+}
+
+h1{
+    color: $font-color;
+    font-family: $font;
+}
+
+p{
+    color: $second-font-color;
+}
