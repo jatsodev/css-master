@@ -3,41 +3,158 @@ body{
     font-family: sans-serif;
 }
 
-/* Complete exercise */
+/* Complete exercise AREAS*/
 
+#website-areas *{
+    margin: 0px;
+    padding: 0px;
+}
 
-#website{
+#website-areas{
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: 20% 10% 60% 10%; */
+    grid-template-rows: 150px 70px 1fr 70px;
+    grid-template-areas:
+        "header header header header header"
+        "menu menu menu menu menu"
+        "content content content content aside"
+        "footer footer footer footer footer";
+    grid-gap: 20px;
+    /* grid-row-gap: 20px; */
+    /* grid-column-gap: 20px; */
     width: 75%;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 1000px;
     margin: 0px auto;   
     border: 1px solid #ccc;
 }
 
-#header{
+#website-areas #header{
+    grid-area: header;
+/* IMPORTANT */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* IMPORTANT */
+
+    
     background: blue;
     color: white;
 }
 
-#menu{
+#website-areas #menu{
+    grid-area: menu;
     background: lightblue;
     color: black;
+    line-height: 70px;
 }
 
-#content{
+#website-areas #menu ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+}
+
+#website-areas #content{
+    grid-area: content;
+
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 25px;
+   padding: 20px;
+
     background: #eee;
 }
 
-#content  article{
+#website-areas #content  article{
     background: #ccc;
     border: 1px solid #555;
 }
 
-#aside{ 
+#website-areas #aside{ 
+    grid-area: aside;
     background: orange;
     color: white;
 }
 
-#footer{
+#website-areas #footer{
+    grid-area: footer; 
+    background: black;
+    color: white;
+}
+
+/* Complete exercise */
+
+#website *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#website{
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: 20% 10% 60% 10%; */
+    grid-template-rows: 150px 70px 1fr 70px;
+
+    width: 75%;
+    /* height: 100vh; */
+    height: 1000px;
+    margin: 0px auto;   
+    border: 1px solid #ccc;
+}
+
+#website #header{
+/* IMPORTANT */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* IMPORTANT */
+
+    grid-column: 1 / 6;
+    background: blue;
+    color: white;
+}
+
+#website #menu{
+    grid-column: 1 / 6;
+    background: lightblue;
+    color: black;
+    line-height: 70px;
+}
+
+#website #menu ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+}
+
+#website #content{
+    grid-column: 1 / 5;
+
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 25px;
+   padding: 20px;
+
+    background: #eee;
+}
+
+#website #content  article{
+    background: #ccc;
+    border: 1px solid #555;
+}
+
+#website #aside{ 
+    grid-column: 5 / 6;
+    background: orange;
+    color: white;
+}
+
+#website #footer{
+    grid-column: 1 / 6;
     background: black;
     color: white;
 }
