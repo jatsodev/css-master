@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap's components</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <header class="col-md-12 mt-2">
+         
+
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Components</a>
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#"
+                        >Home <span class="sr-only">(current)</span></a
+                    >
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <!-- class="btn btn-secondary dropdown-toggle" 
+                            
+                    id="dropdownMenuLink" 
+                    data-bs-toggle="dropdown"  -->
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                        
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="d-flex my-2 my-lg-0 ms-2">
+                            <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                            />
+                            <button
+                            class="btn btn-outline-success my-2 my-sm-0"
+                            type="submit"
+                            >
+                            Search
+                            </button>
+                        </form>
+                    </li>
+
+
+                </ul>
+                <ul class="navbar-nav me-auto">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Jatso
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <div class="dropdown-divider"></div>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                </ul>
+                
+                </div>
+          </nav>
+
+          
+        </header>
+      </div>
+
+      
+      <div class="row">
+        <div class="col-md-8 mt-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">Web development</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">Bootstrap's components</a>
+                    </li>
+                    
+                </ol>
+            </nav>
+            <div class="alert alert-danger alert-dismissible fade show " role="alert">
+                <strong>Awesome!!!!</strong> you have successfully registered.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    <!-- <span>&times;</span> -->
+                </button>
+            </div>
+
+            <h2>
+                <span class="badge bg-success">
+                    NUEVO
+                </span>
+                Bootstrap's Components
+            </h2>
+            <p>
+                This is a example of badges in Bootstrap
+                <a href="#" class="badge bg-danger rounded-pill text-decoration-none">
+                    New article
+                </a>
+            </p>
+        </div>
+      </div>
+
+    </div>
+    <script type="text/javascript" src="jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
+  </body>
+</html>
