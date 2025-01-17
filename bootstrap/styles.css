@@ -27,5 +27,15 @@ footer{
 @media (max-width: 768px){
     #menu{
         height: auto;
+
     }
+}
+
+#carouselExampleControls{
+    height: 450px;
+    overflow: hidden;
+}
+
+#carouselExampleControls img{
+    height: 450px;
 }
