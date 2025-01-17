@@ -307,9 +307,15 @@
              <h3>Form</h3>
              <form>
 
-                <div class="mb-3">
-                    <label>Name</label>
-                    <input type="text" class="form-control" placeholder="Type your name"/>
+                <div class="form-group">
+                    <!-- <label>Name</label> -->
+                     <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0">Name</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Type your name"/>
+                     </div>
+                    
                 </div>
 
                 <div class="form-group">
@@ -330,7 +336,7 @@
                     <input type="password" class="form-control" placeholder="Type your password">
                 </div>
 
-                <input type="submit" class="btn btn-success" value="Send"/>
+                <input type="submit" class="btn btn-success mt-3" value="Send"/>
 
              </form>
 
@@ -462,6 +468,59 @@
                 <a href="#" class="btn btn-primary btn-xs">Login</a>
             </div>
         </div>
+
+        <!-- table-striped -->
+        <table class="table table-bordered table-hover my-5">
+            <!-- table-light -->
+            <thead class="table-dark">
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Last Name
+                    </th>
+                    <th>
+                        Age
+                    </th>
+                </tr>
+            </thead>
+            
+            <tr>
+                <td>
+                    Yoyo
+                </td>
+                <td>
+                    Pancho
+                </td>  
+                <td>
+                    6
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Cronos
+                </td>
+                <td>
+                    Oso
+                </td>
+                <td>
+                    8
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Laika
+                </td>
+                <td>
+                    Flaca
+                </td>
+                <td>
+                    3
+                </td>
+            </tr>
+
+        </table>
       
     </div>
     <script type="text/javascript" src="jquery/jquery-3.7.1.min.js"></script>
